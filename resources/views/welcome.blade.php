@@ -39,30 +39,67 @@
 
     <div class="font-sans col-span-3 lg:block fixed z-20 overflow-y-auto right-auto bg-white h-full w-64 border-r">
         <ul class="mx-5 mt-5">
+
             <li>
-                <a href="#"
-                    class="flex text-gray-700 hover:text-black items-center p-2 hover:bg-gray-100 rounded-xl">
-                    <i class='text-2xl bx bx-grid-alt mr-2'></i>
-                    <span>Dashboard</span>
-                    <i class='bx bx-chevron-down text-3xl ml-auto'></i>
-                </a>
-            </li>
-            <li>
-                <a href="#"
-                    class="flex text-gray-700 hover:text-black items-center p-2 hover:bg-gray-100 rounded-xl">
-                    <i class='text-2xl bx bx-grid-alt mr-2'></i>
-                    <span>Dashboard</span>
-                    <i class='bx bx-chevron-down text-3xl ml-auto'></i>
-                </a>
-            </li>
-            <li>
-                <a href="#"
-                    class="flex text-gray-700 hover:text-black items-center p-2 hover:bg-gray-100 rounded-xl">
-                    <i class='bx bxs-user text-2xl mr-2'></i>
+                <a href="/users"
+                    class=" flex text-gray-700 hover:text-black items-center p-2 hover:bg-gray-100 rounded-xl">
+                    <i class='text-2xl bx bx-user mr-2'></i>
                     <span>Users</span>
-                    {{-- <i class='bx bx-chevron-down text-3xl ml-auto'></i> --}}
                 </a>
             </li>
+
+            <li class="dropdown ">
+                <div
+                    class="flex text-gray-700 hover:text-black items-center p-2 hover:bg-gray-100 rounded-xl cursor-pointer">
+                    <i class='bx bx-chevron-down-square text-2xl mr-2'></i>
+                    <span>Dropdown</span>
+                    <i class='bx bx-chevron-down text-2xl ml-auto'></i>
+                </div>
+
+                <ul class="hidden">
+                    <li>
+                        <a href="/users"
+                            class=" flex text-gray-700 hover:text-black items-center p-2 hover:bg-gray-100 rounded-xl pl-10">
+                            {{-- <i class='text-2xl bx bx-user mr-2'></i --}}
+                            <span>Submenu 1</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/users"
+                            class=" flex text-gray-700 hover:text-black items-center p-2 hover:bg-gray-100 rounded-xl pl-10">
+                            {{-- <i class='text-2xl bx bx-user mr-2'></i --}}
+                            <span>Submenu 2</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="dropdown ">
+                <div
+                    class="flex text-gray-700 hover:text-black items-center p-2 hover:bg-gray-100 rounded-xl cursor-pointer">
+                    <i class='bx bx-chevron-down-square text-2xl mr-2'></i>
+                    <span>Dropdown</span>
+                    <i class='bx bx-chevron-down text-2xl ml-auto'></i>
+                </div>
+
+                <ul class="hidden">
+                    <li>
+                        <a href="/users"
+                            class=" flex text-gray-700 hover:text-black items-center p-2 hover:bg-gray-100 rounded-xl pl-10">
+                            {{-- <i class='text-2xl bx bx-user mr-2'></i --}}
+                            <span>Submenu 1</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/users"
+                            class=" flex text-gray-700 hover:text-black items-center p-2 hover:bg-gray-100 rounded-xl pl-10">
+                            {{-- <i class='text-2xl bx bx-user mr-2'></i --}}
+                            <span>Submenu 2</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
         </ul>
     </div>
 
