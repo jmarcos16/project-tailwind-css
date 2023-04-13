@@ -18,7 +18,7 @@
 
     {{-- Navbar --}}
 
-    <x-sidebar-navigation />
+    <x-header-navigation />
 
     {{-- Sidebar --}}
 
