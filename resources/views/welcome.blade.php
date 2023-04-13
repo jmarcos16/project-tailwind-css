@@ -43,58 +43,15 @@
             <x-menu.item route='/dashboard' title="Dashboard" icon='bx-grid-alt' />
             <x-menu.item route='/users' title="Users" icon='bx-user' />
 
+            <x-menu.dropdown title="DropTest" icon='bx-grid'>
+                <x-slot:dropitems>
+                    <x-menu.drop-items title="Fist Item" route='/first' />
+                    <x-menu.drop-items title="Second Item" route='/second' />
+                    <x-menu.drop-items title="Third Item" route='/third' />
+                </x-slot:dropitems>
+            </x-menu.dropdown>
 
-            <li class="dropdown ">
-                <div
-                    class="flex text-gray-700 hover:text-black items-center p-2 hover:bg-gray-100 rounded-xl cursor-pointer">
-                    <i class='bx bx-chevron-down-square text-2xl mr-2'></i>
-                    <span>Dropdown</span>
-                    <i class='bx bx-chevron-down text-2xl ml-auto'></i>
-                </div>
 
-                <ul class="hidden">
-                    <li>
-                        <a href="/users"
-                            class=" flex text-gray-700 hover:text-black items-center p-2 hover:bg-gray-100 rounded-xl pl-10">
-                            {{-- <i class='text-2xl bx bx-user mr-2'></i --}}
-                            <span>Submenu 1 Segunda</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/users"
-                            class=" flex text-gray-700 hover:text-black items-center p-2 hover:bg-gray-100 rounded-xl pl-10">
-                            {{-- <i class='text-2xl bx bx-user mr-2'></i --}}
-                            <span>Submenu 2</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="dropdown ">
-                <div
-                    class="flex text-gray-700 hover:text-black items-center p-2 hover:bg-gray-100 rounded-xl cursor-pointer">
-                    <i class='bx bx-chevron-down-square text-2xl mr-2'></i>
-                    <span>Dropdown</span>
-                    <i class='bx bx-chevron-down text-2xl ml-auto'></i>
-                </div>
-
-                <ul class="hidden">
-                    <li>
-                        <a href="/users"
-                            class=" flex text-gray-700 hover:text-black items-center p-2 hover:bg-gray-100 rounded-xl pl-10">
-                            {{-- <i class='text-2xl bx bx-user mr-2'></i --}}
-                            <span>Submenu 1</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/users"
-                            class=" flex text-gray-700 hover:text-black items-center p-2 hover:bg-gray-100 rounded-xl pl-10">
-                            {{-- <i class='text-2xl bx bx-user mr-2'></i --}}
-                            <span>Submenu 2</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
 
         </ul>
     </div>
