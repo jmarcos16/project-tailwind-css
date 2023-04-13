@@ -40,13 +40,9 @@
     <div class="font-sans col-span-3 lg:block fixed z-20 overflow-y-auto right-auto bg-white h-full w-64 border-r">
         <ul class="mx-5 mt-5">
 
-            <li>
-                <a href="/users"
-                    class=" flex text-gray-700 hover:text-black items-center p-2 hover:bg-gray-100 rounded-xl">
-                    <i class='text-2xl bx bx-user mr-2'></i>
-                    <span>Users</span>
-                </a>
-            </li>
+            <x-menu.item route='/dashboard' title="Dashboard" icon='bx-grid-alt' />
+            <x-menu.item route='/users' title="Users" icon='bx-user' />
+
 
             <li class="dropdown ">
                 <div
@@ -61,7 +57,7 @@
                         <a href="/users"
                             class=" flex text-gray-700 hover:text-black items-center p-2 hover:bg-gray-100 rounded-xl pl-10">
                             {{-- <i class='text-2xl bx bx-user mr-2'></i --}}
-                            <span>Submenu 1</span>
+                            <span>Submenu 1 Segunda</span>
                         </a>
                     </li>
                     <li>
