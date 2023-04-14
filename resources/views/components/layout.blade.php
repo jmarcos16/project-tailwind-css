@@ -26,8 +26,8 @@
 
 
     {{-- CONTENT --}}
-    <div class="lg:ml-64 py-4 relative top-[4.4rem]">
-        <span class="text-xl font-semibold p-4 mt-2">{{ $title }}</span>
+    <div class="lg:ml-64 py-1 relative top-[3.6rem]">
+        <div class="text-xl font-semibold p-4 mt-2 w-full">{{ $title }}</div>
         {{ $slot }}
     </div>
 

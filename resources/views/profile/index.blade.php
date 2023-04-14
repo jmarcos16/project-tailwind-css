@@ -1,5 +1,12 @@
 <x-layout title="All Users" atributts="bg-white">
 
+    <div class="flex justify-between mx-4 items-center">
+        <input type="text" placeholder="Search" class="rounded-lg  w-1/4 mb-2">
+        <div class="flex">
+            <x-button.submit title="Add User" icon='bx-plus' />
+            <x-button.submit title="Export" icon='bxs-file-export' atributts='bg-white text-black border' />
+        </div>
+    </div>
 
     <table class="w-full my-3 align-middle text-left">
         <thead class="w-full bg-gray-50 h-10 uppercase text-[0.75rem] font-thin opacity-60 border-y">
