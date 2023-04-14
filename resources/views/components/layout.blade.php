@@ -12,6 +12,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    @livewireStyles
 </head>
 
 <body class="{{ $atributts ?? 'bg-gray-50' }}">
@@ -31,6 +32,7 @@
         {{ $slot }}
     </div>
 
+    @livewireScripts
 </body>
 
 </html>
