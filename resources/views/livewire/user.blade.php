@@ -42,7 +42,7 @@
                 <td>
                     <div class="flex items-center justify-center">
                         <x-button.submit title="Edit User" icon='bxs-file-export' />
-                        <x-button.submit title="Edit User" icon='bxs-file-export' />
+                        <x-button.submit title="Edit User" icon='bxs-file-export' atributts="border" />
                     </div>
                 </td>
             </tr>
@@ -51,4 +51,6 @@
     </tbody>
 </table>
 
-{{ $users->links() }}
+<div class="bg-slate-50 px-4 pb-3 border-b">
+    {{ $users->links() }}
+</div>
